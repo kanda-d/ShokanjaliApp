@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/item1" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nhome"
+            android:icon="@drawable/house"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/addPost"
+            android:icon="@drawable/pencil"
+            android:title="Add Post" />
+
+        <item
+            android:id="@+id/npandit"
+            android:icon="@drawable/pa"
+            android:title="Get Pandit ji" />
+
+
+        <item
+            android:id="@+id/draftPost"
+            android:icon="@drawable/refresh"
+            android:title="Incomplete Post" />
+
+
+
+
+    <item
+        android:id="@+id/rPandit"
+        android:icon="@drawable/pandit"
+        android:title="Register as Pandit ji" />
+
+    </group>
+
+    <group android:id="@+id/item2"  android:checkableBehavior="all">
+
+        <item
+            android:id="@+id/nAbout"
+            android:icon="@drawable/about"
+            android:title="About" />
+
+        <item
+        android:id="@+id/nshare"
+        android:icon="@drawable/icon_s"
+        android:title="Share" />
+        <item
+            android:id="@+id/nhelp"
+            android:icon="@drawable/help"
+            android:title="Help" />
+
+
+    </group>
+
+
+    <item
+        android:id="@+id/nlogin"
+        android:icon="@drawable/login"
+        android:title="Login"/>
+    <item
+        android:id="@+id/nlogout"
+        android:icon="@drawable/login"
+        android:title="Logout" />
+
+</menu>

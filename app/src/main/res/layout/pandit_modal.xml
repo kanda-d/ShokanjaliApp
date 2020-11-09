@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingBottom="3dp"
+    android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:elevation="2dp"
+            android:background="@drawable/book_shape"
+            android:id="@+id/PanditclickLinearPost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="7dp"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/pandit_profile"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/icon_upload" />
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/pandit_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="0dp"
+                    android:text="Ramshnakar Sharma"
+                    android:textColor="#2e3691"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/pandit_mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="0dp"
+                    android:text="MO: 819295XXXX"
+                    android:textColor="#689F38"
+                    android:textSize="12sp" />
+
+
+                <TextView
+                    android:id="@+id/pandit_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="5dp"
+                    android:lineHeight="15dp"
+                    android:text="Lorem ipsum, or lipsum as it is sometimes, graphic or web designs. The passage is  "
+                    android:textColor="#9a9a9a"
+                    android:textSize="12.5sp" />
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/pandit_id"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#2e3691"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+</LinearLayout>

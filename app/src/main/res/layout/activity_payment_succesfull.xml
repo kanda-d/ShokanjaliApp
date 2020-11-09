@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal|center_vertical"
+    tools:context=".PaymentSuccesfull">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="150dp"
+        android:id="@+id/statusGif"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ok"/>
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineHeight="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:text="The Post will go Live \n Once it's Reviewd &amp; Verifid !"
+        android:textSize="17dp" />
+
+    <Button
+        android:layout_marginHorizontal="70dp"
+        android:layout_gravity="center"
+        android:textSize="18dp"
+        android:id="@+id/btnCheck"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:onClick="backToHome"
+        android:layout_marginTop="40dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Back to Home"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        />
+
+
+
+</LinearLayout>

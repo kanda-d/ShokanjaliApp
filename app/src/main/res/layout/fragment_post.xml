@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_marginBottom="39dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_weight="2"
+                android:textColor="#4E4E4E"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="Obituary Details"/>
+
+        </LinearLayout>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/Profidle_Image"
+            android:layout_width="100dp"
+            android:layout_gravity="center"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dp"
+            android:src="@drawable/icon_upload"/>
+
+
+
+        <EditText
+            android:textColor="#222"
+            android:layout_gravity="center"
+            android:id="@+id/dName"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="17dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#801D1D1D"
+            android:hint="Person Name"
+            android:inputType="text"
+            android:textColorHint="#801D1D1D"
+            android:textSize="15dp"
+            />
+        <TextView
+            android:layout_marginBottom="11dp"
+            android:layout_marginLeft="35dp"
+            android:textSize="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Type "/>
+
+
+
+        <RadioGroup
+            android:id="@+id/fancy_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="19dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/title">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:background="@drawable/radio_states_green"
+                android:text="उठावनी"
+                android:fontFamily="sans-serif-black"
+                android:padding="10dp"
+                android:textColor="@drawable/radio_test"
+                android:layout_weight=".335"
+                android:gravity="center"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radio_states_green"
+                android:button="@null"
+                android:fontFamily="sans-serif-black"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@drawable/radio_test"
+                android:text="चौथा"
+                android:layout_weight=".335"
+                android:gravity="center"/>
+
+            <RadioButton
+                android:fontFamily="sans-serif-black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radio_states_green"
+                android:button="@null"
+                android:padding="10dp"
+                android:textColor="@drawable/radio_test"
+                android:text="Others"
+                android:layout_weight=".335"
+                android:gravity="center"/>
+
+        </RadioGroup>
+
+
+
+        <EditText
+            android:textColor="#222"
+            android:layout_gravity="center"
+            android:layout_marginBottom="17dp"
+            android:id="@+id/dDetails"
+            android:layout_height="80dp"
+            android:backgroundTint="#801D1D1D"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="match_parent"
+            android:hint="Person Details"
+            android:inputType="text"
+            android:ems="10"
+            android:gravity="start|top"
+            android:textColorHint="#801D1D1D"
+            android:textSize="15dp"/>
+
+
+
+        <EditText
+            android:textColor="#222"
+            android:layout_gravity="center"
+            android:id="@+id/dShoka"
+            android:layout_marginBottom="17dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#801D1D1D"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="match_parent"
+            android:hint="शोकाकुल "
+            android:inputType="text"
+            android:ems="10"
+            android:gravity="start|top"
+            android:textColorHint="#801D1D1D"
+            android:textSize="15dp"/>
+
+
+        <EditText
+            android:textColor="#222"
+            android:layout_gravity="center"
+            android:layout_marginBottom="17dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#801D1D1D"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="match_parent"
+            android:hint="प्रतिष्ठान "
+            android:inputType="text"
+            android:id="@+id/dPratishthan"
+            android:ems="10"
+            android:gravity="start|top"
+            android:textColorHint="#801D1D1D"
+            android:textSize="15dp"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/autocomplete"
+            android:textColor="#222"
+            android:layout_gravity="center"
+            android:layout_marginBottom="17dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#801D1D1D"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="match_parent"
+            android:hint="Add Location "
+            android:inputType="text"
+            android:ems="10"
+            android:gravity="start|top"
+            android:textColorHint="#801D1D1D"
+            android:textSize="15dp"/>
+
+
+        <EditText
+            android:textColor="#222"
+            android:layout_gravity="center"
+            android:id="@+id/dMobiles"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#801D1D1D"
+            android:ems="10"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="match_parent"
+            android:hint="Mobile - 9195326598,8192953269"
+            android:textColorHint="#801D1D1D"
+            android:textSize="15dp"
+            />
+
+
+
+
+        <Button
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_gravity="center"
+            android:textSize="18dp"
+            android:layout_marginBottom="50dp"
+            android:id="@+id/addPost"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="Add Post"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            />
+
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</FrameLayout>
